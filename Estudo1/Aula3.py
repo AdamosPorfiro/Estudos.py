@@ -8,11 +8,14 @@ Problema 1
 
 Imprima a palavra "carregando" três vezes
 
+for item in coleção:
+
 for = para 
-item
-in = e
-coleção:
+item = nome
+in = de, a, em
+range = coleção
 comandos a executar
+
 range: È uma forma de gerar listas no python 
 
 1 - Exemplo(Especificação):
@@ -25,9 +28,7 @@ O range não inclui o ultimo numero especificado, por isso na execução ele imp
 2 - Exemplo(Especificação)
 
 for item in range(1,21,2) -> A ultima especificação indica os pulos que ele vai dar entre cada valor;
-por exemplo a cada 2 numeros ele pula 1 sendo 1,3,5,7,9...
-
-'''
+por exemplo a cada 2 numeros ele pula 1 sendo 1,3,5,7,9.
 
 for palavra in range (1,4):
     print('Carregando')
@@ -37,4 +38,24 @@ for item in range(1,21):
 
 for item in range(1,21,2):
     print(item)
+
+
+'''
+
+
+'''
+
+Como podemos criar uma lista em python?
+- nome_da_variavel = ['Quais','quer','valores','que','queira','armazenar'];
+cada nome deve estar preenchido por aspas simples e separados por virgula.
+
+usar um laço de repetição para imprimir todos os nomes
+
+'''
+
+nomes = ['Adamos', 'Alesson', 'Vilma', 'Pamela']
+for nome in nomes:
+    print(nome) # Ele vai imprimir a variavel for que possui o nome chamado "nome"
+
+
 
