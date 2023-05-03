@@ -1,2 +1,2 @@
 # Estudos.py
-Estudos da python simples curso canal devaprender
+Estudos de python simples - curso canal devaprender - Lógica de programação com python
