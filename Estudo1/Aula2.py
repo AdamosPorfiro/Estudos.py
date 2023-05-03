@@ -56,7 +56,8 @@ if atraso == 2
     print pode entrar
 else
     print Vai tomar suspensão!
-"""
+
+
 numero_de_atrasos = int(input("Quantos atrasos você possui?"))
 if numero_de_atrasos >= 3:
     print("Você está suspenso")
@@ -66,3 +67,42 @@ elif numero_de_atrasos == 2:
     print("Ok, Você pode entrar, porém caso tome mais 1 falta você será suspenso")
 else:
     print("Você pode entrar")
+"""
+
+"""
+Problema - 4
+
+Identifique o maior entre os 2 numeros digitados pelo usuario
+
+1 - Quais são os dados de entrada?
+input valor_1;
+input valor_2;
+
+2 - O que devo fazer com esses numeros?
+Devem ser comparados e o programa deve dizer qual é o maior entre eles.
+
+3 - Qual a restrição deste problema?
+Um dos numeros deve ser maior que outro.
+
+4 - Qual o resultado esperado?
+A comparação dos numeros, indicando qual deles é o maior.
+
+5 - Qual é a sequencia de passos a ser feita para se alcançar o resultado?
+input valor_1
+input valor_2
+if valor_1 > valor_2
+    print O valor_1 é o maior numero
+if valor_1 < valor_2
+    print O valor_2 é o maior numero
+if valor_1 == valor_2
+    print Ops,por favor digite valores diferentes    
+"""
+
+valor_1 = int(input('Digite um valor:  '))
+valor_2 = int(input('Digite outro valor:  '))
+if valor_1 == valor_2:
+    print('Ops, por favor digite valores diferentes')
+elif valor_1 > valor_2:
+    print('O primeiro valor digitado é o maior, sendo ele o numero:', valor_1)
+else:
+    print('O segundo valor digitado é o maior, sendo ele o numero:', valor_2)
