@@ -98,7 +98,7 @@ if valor_1 == valor_2
     print Ops,por favor digite valores diferentes    
 """
 
-valor_1 = int(input('Digite um valor:  '))
+valor_1 = int(input('Digite um valor:  ')) # Obs.: Comparações não podem ser feitas com strings e precisam ser convertidos para numéricos (int, float)
 valor_2 = int(input('Digite outro valor:  '))
 if valor_1 == valor_2:
     print('Ops, por favor digite valores diferentes')
