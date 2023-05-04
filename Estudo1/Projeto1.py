@@ -7,7 +7,7 @@ Ex.: Fatorial de 5:
 
 5! = 5 x 4 x 3 x 2 x 1 = 120
 
-Crie um programa que vai receber um numero e vai exibir o fatorial de uma numero
+Crie um programa que vai receber um numero e vai exibir o seu fatorial. 
 
 # Utilize o metodo dos 5q's;
 # Analise criticamente o problma e descubra;
@@ -22,28 +22,35 @@ Deve multiplicar o numero digitado pelo usuario, pelos numeros positivos igual e
 menores que ele.
 
 3 - Quais são as restrições desse problema?
-Ele usa apenas multiplicação, multiplica o numero digitado pelo usuario por ele mesmo e os seus antecessores.
+Ele usa apenas multiplicação, multiplica o numero digitado pelo usuario por ele mesmo e os seus antecessores;
+Deve ser um valor positivo inteiro.
 
 
 4 - Qual é o resultado esperado?
-O produto da multiplicação dos dados de entredada por ele mesmo e seus antecessores.
+O produto da multiplicação dos dados de entredada por ele mesmo e seus antecessores;
+Fatorial do dado de entrada seja exibido;
 
 
 5 - Quais são as sequencias de passos a serem feitas para se alcançar o resultado esperado?
 1 - Pedir para o usuario dado de entrada;
-2 - Esse dado deve ser armazenado e convertido para numeral usando variaveis e int;
-3 - Deve ser criado uma variavel que armazenara o resultado e inicializada ccom 1 que será o numero inicial multiplicado pelo dado de entrada;
-4 - Deve ser criado um laço de repetição "for" com especificador range indicando:
+2 - Deve ser comparado para saber se o numero é positivo inteiro;
+3 - Esse dado deve ser armazenado e convertido para numeral usando variaveis e int;
+4 - Deve ser criado uma variavel que armazenara o resultado e inicializada ccom 1 que será o numero inicial multiplicado pelo dado de entrada;
+5 - Deve ser criado um laço de repetição "for" com especificador range indicando:
 
--> 1 = Ele sempre vai começar a multiplicação de 1 até o numero digitado pelo usuario;
+-> 1 = Ele sempre vai começar a multiplicação de 1 até o dado de entrada estabelecido;
 -> dado de entrada = Variavel que armazena o numero digitado pelo usuario + 1; 
 -> + 1 = O range nunca inclui o ultimo numero, dessa forma ele incluirá, incrementando +1 na operação;
 
-5- Por fim deve imprimir na tela para o usuario o resultado final que 
+6- Por fim deve imprimir na tela para o usuario o resultado final que 
 
 '''
-numero = int (input('Digite um numero para ser calculado o seu fatorial '))
-fatorial = 1
-for numeros in range(1, numero + 1):
-    fatorial = fatorial*numeros
-print ('Fatorial do numero', numero, 'é', fatorial)
+numero = int (input('Digite um numero para ser calculado o seu fatorial ')) # Recebe o numero digitado que é convertido em numeral int;
+if numero > 0: # Vai verificar se o numero digitado é positivo e um numero inteiro 
+    print ('O numero é inteiro positivo, vamos continuar...')
+    fatorial = 1 # Variavel que inicia com 1, será usada para iniciar a operação;
+else:
+      print('O numero deve ser inteiro positivo, tente novmamente...')    
+for numeros in range(1, numero + 1): # Laço de repetição com range com especificação 1 que vai dizer que ele irá começar a partir do 1 até o dado de entrada estabelecido;
+        fatorial = fatorial*numeros # Fatorial iniciado em 1 vai multiplicar de 1 até o dado de entrada obtido que passara pelo laço for numeros fatorial*numeros Ex.: !5 = 1*1=1*2=2*3=6*4=24*5=;
+print ('Fatorial do numero', numero, 'é', fatorial) # Em seguida ele vai printar a mensagem indicando o dado de entrada mas o fatorial desse dado.
