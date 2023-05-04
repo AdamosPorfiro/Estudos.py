@@ -63,3 +63,4 @@ for idade in idades: # Laço chado de idade que invoca a variavel idades
 print(total) # Exibi na tela para o usuario o total somado (Resultado).
 
 
+
