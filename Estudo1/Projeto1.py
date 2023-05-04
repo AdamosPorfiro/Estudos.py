@@ -46,10 +46,10 @@ Fatorial do dado de entrada seja exibido;
 
 '''
 numero = int (input('Digite um numero para ser calculado o seu fatorial ')) # Recebe o numero digitado que é convertido em numeral int;
-if numero > 0: # Vai verificar se o numero digitado é positivo e um numero inteiro 
+if numero > 0: # Vai definir que o para continuar o numero deve ser positivo e em seguida vai definir o fatorial = 1 para iniciar a multiplicação do dado de entrada;
     print ('O numero é inteiro positivo, vamos continuar...')
     fatorial = 1 # Variavel que inicia com 1, será usada para iniciar a operação;
-else:
+else: # Caso seja valores negativos ele exibe uma mensagem e falha, parando o código;
       print('O numero deve ser inteiro positivo, tente novmamente...')    
 for numeros in range(1, numero + 1): # Laço de repetição com range com especificação 1 que vai dizer que ele irá começar a partir do 1 até o dado de entrada estabelecido;
         fatorial = fatorial*numeros # Fatorial iniciado em 1 vai multiplicar de 1 até o dado de entrada obtido que passara pelo laço for numeros fatorial*numeros Ex.: !5 = 1*1=1*2=2*3=6*4=24*5=;
