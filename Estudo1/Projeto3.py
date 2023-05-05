@@ -47,7 +47,7 @@ velocidade_maxima = 80
 continuar = 1
 while continuar == 1:
     velocidade_usuario = int (input('Digite a velocidade que você estava:  '))
-    if velocidade_usuario < velocidade_maxima:
+    if velocidade_usuario <= velocidade_maxima:
         print('Não levou multa')
     elif velocidade_usuario > velocidade_maxima and (velocidade_usuario <= velocidade_maxima + 10):
         print('Levou multa leve')
