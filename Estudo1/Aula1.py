@@ -21,7 +21,7 @@ input horas_mensal
 valor_hora = salario_mensal / horas_mensal
 print valor_hora
 '''
-salario_mensal = input('Qual o seu salario mensal?')
-horas_mensal = input('Quantas horas trabalhadas no mês?')
+salario_mensal = input('Qual o seu salario mensal?  ')
+horas_mensal = input('Quantas horas trabalhadas no mês?  ')
 valor_hora = int (salario_mensal) / int (horas_mensal)
 print(valor_hora)
